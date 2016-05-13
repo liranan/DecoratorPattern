@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cn.edu.uestc.decoratorpattern;
+package cn.edu.uestc.decoratorpattern.starbuzz;
 
 /**
  *
  * @author Liranan
  */
-public class Decaf extends Beverage {
+public abstract class Beverage {
 
-    public Decaf() {
-        description = "Decaf";
+    String description = "Unknown Beverage";
+
+    public String getDescription() {
+        return description;
     }
 
-    public double coat() {
-        return 1.05;
-    }
+    public abstract double coat();
 }

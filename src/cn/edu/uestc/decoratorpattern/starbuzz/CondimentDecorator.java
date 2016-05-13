@@ -3,19 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cn.edu.uestc.decoratorpattern;
+package cn.edu.uestc.decoratorpattern.starbuzz;
 
 /**
  *
  * @author Liranan
  */
-public class Espresso extends Beverage {
+public abstract class CondimentDecorator extends Beverage {
 
-    public Espresso() {
-        description = "Espresso";
-    }
-
-    public double coat() {
-        return 1.99;
-    }
+    public abstract String getDescription();
 }

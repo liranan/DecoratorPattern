@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cn.edu.uestc.decoratorpattern;
+package cn.edu.uestc.decoratorpattern.starbuzz;
 
 /**
  *
  * @author Liranan
  */
-public class DarkRoast extends Beverage {
+public class HouseBlend extends Beverage {
 
-    public DarkRoast() {
-        description = "Dark Roast Coffee";
+    public HouseBlend() {
+        description = "House Blend Coffee";
     }
 
     public double coat() {
-        return .99;
+        return .89;
     }
 }
